@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Two Numbers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #result {
+            animation: heartbeat 2s infinite;
+           
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-900 text-zinc-200">
+
+    <div class="flex flex-col items-center justify-center p-16">
+        
+        <h1 class="text-2xl mb-10">ADDING TWO NUMBERS</h1>
+        <div class="text flex flex-col items-center justify-center">
+            <input id="number1" class="bg-zinc-800 rounded-md w-80 md:w-96 px-4 md:px-9 text-center py-2 mb-3"
+                type="text" placeholder="Enter first number...">
+            <input id="number2" class="bg-zinc-800 rounded-md w-80 md:w-96 px-4 md:px-9 text-center py-2 mb-3"
+                type="text" placeholder="Enter second number...">
+            <button type="button" onclick="addNumbers()"
+                class="bg-blue-800 rounded-md w-80 md:w-96 px-4 md:px-9 text-center py-2 mb-3">Submit</button>
+            <h1 id="result" class="text-3xl text-center mt-6"></h1>
+        </div>
+    </div>
+
+    <script>
+        function addNumbers() {
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var sum = number1 + number2;
+            document.getElementById("result").textContent = "GOOD MORNINGG BUSYISHAAAAAAA💗";
+        }
+    </script>
+    
+</body>
+
+</html>
